@@ -1,8 +1,9 @@
 import Fastify from "fastify";
+import { logger } from "./logger";
 
 export const buildServer = async () => {
   const app = Fastify({
-    logger: true,
+    logger: logger,
   });
   // register all plugin
 
