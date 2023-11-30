@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "dev-http-logger": "^1.0.6",
-    "dotenv": "^16.3.1",
     "express": "^4.18.2"
   },
   "devDependencies": {

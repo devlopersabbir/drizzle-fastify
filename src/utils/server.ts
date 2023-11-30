@@ -3,7 +3,7 @@ import { logger } from "./logger";
 
 export const buildServer = async () => {
   const app = Fastify({
-    logger: logger,
+    logger,
   });
   // register all plugin
 

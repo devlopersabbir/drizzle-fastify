@@ -1,15 +1,22 @@
-import dotenv from "dotenv";
 import { buildServer } from "./utils/server";
-import { logger } from "./utils/logger";
-dotenv.config();
+import { signals } from "./constant/signals";
+import { gracefulShutdown } from "./utils/shoutdown";
+import { env } from "./configs/env";
 
-const PORT = Number(process.env.PORT) || 4000;
 const main = async () => {
   const app = await buildServer();
-  app.listen({
-    port: PORT,
+  await app.listen({
+    port: env.PORT,
+    host: env.HOST,
   });
-  logger.info(`Server is running at http://localhost:${PORT}`);
+  // ShoutDown server besed on signal
+  for (const signal of signals) {
+    process.on(signal, () => {
+      gracefulShutdown({
+        app,
+      });
+    });
+  }
 };
 
 main();
