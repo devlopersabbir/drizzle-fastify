@@ -3,6 +3,7 @@ import { buildServer } from "./utils/server";
 import { env } from "./configs/env";
 import { signals } from "./constants/signals";
 import { shoutDown } from "./utils/shoutdown";
+import { logger } from "./utils/logger";
 /**
  * Run the server
  */
