@@ -1,9 +1,8 @@
-import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { buildServer } from "./utils/server";
-import { env } from "./configs/env";
-import { signals } from "./constants/signals";
-import { shoutDown } from "./utils/shoutdown";
-import { logger } from "./utils/logger";
+import { FastifyInstance } from "fastify";
+import { buildServer } from "./utils";
+import { env } from "./configs";
+import { signals } from "./constants";
+import { shoutDown } from "./utils";
 /**
  * Run the server
  */
