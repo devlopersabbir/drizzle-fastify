@@ -4,8 +4,8 @@
 - [x] 🔥Create a logger using pino & pino-pretty
 - [x] 🐱‍🚀Signal shoutdown
 - [x] 📅Database connection with `PG db`
-- [x] ✨Create a sample Application schema (**including config**)
-- [ ] 🛒
-- [ ] 🎇
-- [ ] 🎯
-- [ ] ⚒
+- [x] ✨Create schemas (**including config**)
+- [x] 🛒 Application Schema
+- [ ] 🎇 User Schema
+- [ ] 🎯 Role Permission Schema
+- [ ] ⚒ planing...
