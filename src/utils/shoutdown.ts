@@ -1,6 +1,6 @@
 import { buildServer } from "./server";
 
-export const gracefulShutdown = async ({
+export const shoutDown = ({
   app,
 }: {
   app: Awaited<ReturnType<typeof buildServer>>;

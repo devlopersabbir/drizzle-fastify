@@ -1,23 +1,24 @@
 {
-  "name": "drizzle",
-  "description": "drizzle orm ex",
-  "version": "0.0.1",
+  "name": "fastify",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "dev": "nodemon src/main.ts",
-    "build": "tsc",
-    "start": "node /dist/src/main.js"
+    "dev": "nodemon src/main.ts"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "dev-http-logger": "^1.0.6",
-    "express": "^4.18.2"
+    "fastify": "^4.24.3",
+    "zennv": "^0.1.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/jsonwebtoken": "^9.0.5",
     "@types/node": "^20.10.1",
-    "@types/pg": "^8.10.9",
-    "drizzle-kit": "^0.20.6",
-    "tsx": "^4.6.1",
-    "typescript": "^5.3.2",
-    "zod-to-json-schema": "^3.22.1"
+    "nodemon": "^3.0.1",
+    "pino": "^8.16.2",
+    "pino-pretty": "^10.2.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
   }
 }

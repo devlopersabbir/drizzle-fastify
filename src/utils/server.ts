@@ -1,12 +1,17 @@
-import Fastify from "fastify";
+import Fastify, { FastifyInstance } from "fastify";
 import { logger } from "./logger";
 
 export const buildServer = async () => {
-  const app = Fastify({
+  const app: FastifyInstance = Fastify({
     logger,
   });
-  // register all plugin
+  /**
+   * Register all routes
+   */
 
-  // register all routes
+  /**
+   * Register all plugins
+   */
+
   return app;
 };
