@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "nodemon src/main.ts"
+    "dev": "nodemon src/main.ts",
+    "migrate": "drizzle-kit generate:pg"
   },
   "keywords": [],
   "author": "",
