@@ -7,6 +7,10 @@ export const buildServer = async () => {
   });
   /**
    * Register all routes
+   * LIKE
+   * AUTH
+   * USER
+   * ROLES
    */
 
   /**
