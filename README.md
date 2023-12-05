@@ -6,6 +6,6 @@
 - [x] 📅Database connection with `PG db`
 - [x] ✨Create schemas (**including config**)
 - [x] 🛒 Application Schema
-- [ ] 🎇 User Schema
+- [x] 🎇 User Schema
 - [ ] 🎯 Role Permission Schema
 - [ ] ⚒ planing...
